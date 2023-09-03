@@ -1,16 +1,19 @@
 <template>
   <div class="app-container">
-    <el-input v-model="filterText" placeholder="Filter keyword" style="margin-bottom:30px;" />
+    <el-row>
+      <el-card class="box-card" style="border-radius:6px;">
+        <el-input v-model="filterText" placeholder="Filter keyword" style="margin-bottom:30px;" />
 
-    <el-tree
-      ref="tree2"
-      :data="data2"
-      :props="defaultProps"
-      :filter-node-method="filterNode"
-      class="filter-tree"
-      default-expand-all
-    />
-
+        <el-tree
+          ref="tree2"
+          :data="data2"
+          :props="defaultProps"
+          :filter-node-method="filterNode"
+          class="filter-tree"
+          default-expand-all
+        />
+      </el-card>
+    </el-row>
   </div>
 </template>
 

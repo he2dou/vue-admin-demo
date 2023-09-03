@@ -5,6 +5,8 @@
     transition: margin-left .28s;
     margin-left: $sideBarWidth;
     position: relative;
+    background-color: #f6f6f6;
+    margin-top: 10px;
   }
 
   .sidebar-container {
@@ -35,11 +37,13 @@
 
     .el-scrollbar {
       height: 100%;
+      margin-top: 35px;
+
     }
 
     &.has-logo {
       .el-scrollbar {
-        height: calc(100% - 50px);
+        height: calc(100% - 60px);
       }
     }
 
